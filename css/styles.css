@@ -124,6 +124,10 @@ body {
     padding-top: 96px;
     padding-bottom: 96px;
 }
+
+
+ 
+
 /* ================== HERO ======================= */
 
 .hero {
@@ -206,11 +210,11 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 8px;
     color: var(--navy-blue);
     text-align: center;
-    font-size: 36px;
     font-style: normal;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
 }
 
 .text {
@@ -245,6 +249,17 @@ screen and (min-resolution: 2dppx) {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
     background-color: var(--white);
+}
+
+.team-subtitle {
+    margin-bottom: 8px;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.002em;
 }
 
 .wrap {
@@ -339,7 +354,6 @@ screen and (min-resolution: 2dppx) {
 
 .footer-logo {
     display: block;
-   text-align: center;
     margin-bottom: 17px;
 }
 
@@ -356,15 +370,12 @@ screen and (min-resolution: 2dppx) {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
 }
-
-
 
 .social-text {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     font-weight: 500;
     margin-bottom: 16px;
     color: var(--white);
@@ -502,7 +513,6 @@ screen and (min-resolution: 2dppx) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 392px;
     padding: 72px 16px 24px 16px;
     min-height: 584px;
     border-radius: 4px;
@@ -729,6 +739,14 @@ screen and (min-resolution: 2dppx) {
         max-width: 264px;
     }
          
+    .footer-logo {
+        text-align: center;
+    }
+
+    .social-text {
+        text-align: center;
+    }
+
     .footer-social-wrap {
         margin-bottom: 72px;
     }
@@ -823,7 +841,19 @@ screen and (min-resolution: 2dppx) {
     .menu-social-link:focus {
         background-color: var(--ocean);
     }
+
+    .modal {
+        max-width: 392px;
+        width: 95%;
+    }
     
+}
+
+@media screen and (max-width: 427px) {
+
+    .address-link-tel {
+        font-size: 20px;
+    }
 }
 
 /* =============== TABLET ================ */
@@ -985,12 +1015,9 @@ screen and (min-resolution: 2dppx) {
         display: flex;
     }
   
-
     .footer-text {
         width: 264px;
     }
-
-   
 
     .subscribe {
         text-align: start;
@@ -1011,8 +1038,8 @@ screen and (min-resolution: 2dppx) {
 
     /* ===============MODAL============== */
     .modal {
-        width: 392px;
-        padding: 72px 24зx 24px 24px;
+        width: 408px;
+        padding: 72px 24px 24px 24px;
     }
 }
 
@@ -1156,8 +1183,14 @@ screen and (min-resolution: 2dppx) {
 
 /* ==========================footer ===================== */
 
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
     .footer-wrap {
          margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-social-wrap {
