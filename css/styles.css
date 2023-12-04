@@ -310,7 +310,6 @@ screen and (min-resolution: 2dppx) {
 
 .customers-link {
     display: flex;
-    width: 168px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -346,9 +345,7 @@ screen and (min-resolution: 2dppx) {
     padding-bottom: 96px;
 }
 
-.footer-wrap {
-    margin-bottom: 72px;
-}
+
 
 .footer-logo {
     display: block;
@@ -733,12 +730,30 @@ screen and (min-resolution: 2dppx) {
     .team-item {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 72px;
         max-width: 264px;
     }
-         
+
+    .team-item:not(:last-child) {
+        margin-bottom: 72px;
+    } 
+
+    .customers-list {
+        row-gap: 72px;
+        column-gap: 16px;
+    }
+
+
+    .customers-item {
+        flex-basis: calc((100% - 16px) / 2);
+    }
+
+
     .footer-logo {
         text-align: center;
+    }
+
+    .footer-wrap {
+        margin-bottom: 72px;
     }
 
     .social-text {
@@ -928,7 +943,6 @@ screen and (min-resolution: 2dppx) {
         font-style: normal;
     }
 
-    
 
     .address-link {
         display: inline-block;
@@ -977,7 +991,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .features-item {
-        flex-basis: calc((100% - 2 * 24px) / 2);
+        flex-basis: calc((100% - 24px) / 2);
     }
 
 
@@ -997,17 +1011,20 @@ screen and (min-resolution: 2dppx) {
             column-gap: 24px;
         }
     
-        .features-item {
-            flex-basis: calc((100% - 2 * 24px) / 2);
-        }
-
 
    /* =================== TEAM ========================= */
+
 
 
     .customers-list {
         column-gap: 24px;
     }
+
+    .customers-item {
+        width: 168px;
+    }
+
+/* ================= FOOTER=============== */
 
     .footer-container {
         display: flex;
@@ -1027,7 +1044,7 @@ screen and (min-resolution: 2dppx) {
 
     .footer-label {
         margin-right: 24px;
-}
+    }
 
     .footer-input {
         width: 264px;
@@ -1059,15 +1076,10 @@ screen and (min-resolution: 2dppx) {
         
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 72px;
+        width: 584px;
     }
 
-    .footer-wrap {
-        margin-left: 108px;
-    }
-
-    .footer-form-wrap {
-        margin-left: 108px;
-    }
 }
 
 /* ============== DESKTOP ================== */
@@ -1124,7 +1136,7 @@ screen and (min-resolution: 2dppx) {
     }
 
 
-    
+
     /* ============================== FEATURES ========================== */
     
 
@@ -1161,6 +1173,9 @@ screen and (min-resolution: 2dppx) {
             letter-spacing: 0.002em;
     }
 
+    .text {
+        font-weight: 400;
+    }
 /* ============== Work STYLES ============== */
 
     .work {
@@ -1174,12 +1189,6 @@ screen and (min-resolution: 2dppx) {
 
 /* ============== WORK STYLES ============== */
 
-/* ============== Team STYLES ============== */
-
-
-
-
-/* ============== Team STYLES ============== */
 
 /* ==========================footer ===================== */
 
@@ -1208,9 +1217,4 @@ screen and (min-resolution: 2dppx) {
 .current {
     color: var(--ocean);
 }
-
-
-
-
-
 
